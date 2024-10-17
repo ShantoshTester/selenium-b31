@@ -14,7 +14,7 @@ public class DemoToursRegister {
 
 		driver.get("https://demo.guru99.com/test/newtours/register.php");
 		
-		driver.findElement(By.name("firstName")).sendKeys("John");
+		driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("jhon");
 		driver.findElement(By.name("lastName")).sendKeys("Smith");
 		driver.findElement(By.name("phone")).sendKeys("510-456-7910");
 		driver.findElement(By.id("userName")).sendKeys("abc@gmail.com");
