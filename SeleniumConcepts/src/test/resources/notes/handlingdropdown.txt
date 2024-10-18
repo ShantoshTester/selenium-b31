@@ -1,0 +1,24 @@
+Topic: Handling Dropdown from WebPage
+
+There are many drop downs will be avaiable on Webpage the commonly known dropdown is developed using a select tag
+
+example:https://demo.guru99.com/test/newtours/register.php
+In the above website the country dropdown is developed using a select tag
+
+Steps to handle these dropdown elements from a webpage
+
+1) Identify the dropdown element and check if the dropdown is developed using select tag
+2) If yes 
+3) Then locate the element by one of the locators from selenium and the return type of it should be web element
+4) Then create an object of select class which is present in selenium and pass this dropdown webelement as an argument to this select class
+
+Now we have 3 different ways to select an option from a dropdown
+
+1) using index - not recommneded
+2) using visible text
+3) using ooption value
+
+There are 2 types of dropdown
+
+1) Monoselect - at a time you can select only one option
+2) Multiselect - we can select more than one value at a time
