@@ -1,0 +1,28 @@
+Topic: Different types of Wait in Selenium / Synchronization in Selenium
+
+ Synchronization is the process of matching the tool speed (selenium) with the application (any web application).
+ In order to achieve synchronization in selenium we use one of the following wait statments in selenium
+
+1 Implicit Wait
+  * Its a wait statement written globally
+  * the wait is applicable for all the elements located using driver.findBy
+  * the wait period duration can be from milliseconds to days - but the prefered time should be in seconds
+  * the time is upto - example if you have given the time as 10 seconds and the element appeared on 4th second
+  * if the element is not located even after the specified time then it will throw "No Such Element" exception.
+
+2 Explicit Wait
+  * Its a wait statment written for a specific element
+  * We have to create an object of WebdriverWait and specify the conidtion - (there are a lot of inbuilt condition)
+  * the wait period duration can be from milliseconds to days - but the prefered time should be in seconds
+  * if the element is not located even after the specified time then it will throw "TimeOut" exception.
+
+3 Fluent Wait
+  * (I have not used this wait)
+  * Its a wait statment written for a specific element just like webdriver wait
+  * We can control the polling time 
+
+3 Thread.Sleep
+  * Its a hard wait from Java
+  * It will force stop the execution for the time specified
+
+
