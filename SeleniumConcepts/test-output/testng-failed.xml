@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngassertion.TestModule2">
+      <class name="datadriven.TestRegister">
         <methods>
-          <include name="testCase"/>
+          <include name="testRegister"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testngassertion.TestModule2 -->
+      </class> <!-- datadriven.TestRegister -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

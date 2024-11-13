@@ -36,6 +36,13 @@ public class ExcelUtil {
 		return excel.getSheetAt(sheetNum).getLastRowNum()+1;
 	}
 	
+	public int getRowCount(String sheetName)
+	{
+		return excel.getSheet(sheetName).getLastRowNum()+1;
+	}
+	
+	
+	
 	/*
 	 * this method is used to fetch the data
 	 * parameter to be passed is sheet number, row, col
@@ -43,6 +50,11 @@ public class ExcelUtil {
 	public String getCellData(int sheetNum, int row, int col)
 	{
 		return excel.getSheetAt(sheetNum).getRow(row).getCell(col).toString();
+	}
+	
+	public String getCellData(String sheetName, int row, int col)
+	{
+		return excel.getSheet(sheetName).getRow(row).getCell(col).toString();
 	}
 
 }
